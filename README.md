@@ -1,16 +1,18 @@
-openfl-oasis
+#openfl-oasis
 ============
 
-Advanced 2D Sprite animation system for flash or openfl
+##Advanced 2D Sprite animation system for flash or openfl
 
 What are the advantages of openfl-oasis?
- - It's interface driven (that means it's meant to be extendable)
- - It's super memory efficient. Only holds one reference to any given bitmap data
- - It's built on top of fair scheduling, which means it plays well with heavy load
- - Because it's built on top of scheduling you could implement your own scheduler and use threading
- - Works with texture packer
 
-Sample setup:
+* It's interface driven (that means it's meant to be extendable)
+* It's super memory efficient. Only holds one reference to any given bitmap data
+* It's built on top of fair scheduling, which means it plays well with heavy load
+* Because it's built on top of scheduling you could implement your own scheduler and use threading
+* Works with texture packer
+
+
+####Sample setup:
 
     package;
     
@@ -84,7 +86,7 @@ Sample setup:
 I have also added a sound manager where you can have different sound layers playing audio and you can have a master 
 volume controller or control the individual sound layers.
 
-Here's a sample usage:
+####Sound manager sample usage:
 
     package;
     import flash.media.SoundTransform;
@@ -171,3 +173,16 @@ Here's a sample usage:
             return sprite;
         }
     }
+
+
+
+
+#### Running Tests
+
+* Install munit
+
+		haxelib install munit
+
+* Run the tests
+
+		haxelib run munit test
